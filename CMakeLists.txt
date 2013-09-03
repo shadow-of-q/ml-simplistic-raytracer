@@ -54,7 +54,6 @@ set (SRC
   base/stl.cpp
   base/tools.cpp
   base/math.cpp
-  obj.cpp
-  main.cpp)
-add_executable (loadobj ${SRC})
+  raytracer.cpp)
+add_executable (raytracer ${SRC})
 
