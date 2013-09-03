@@ -85,7 +85,7 @@ done;
 Printf.printf "P2\n%d %d\n256\n" w h
 let closest = ref huge
 let closestnormal = ref (splat3 0.0)
-let isec (r:ray) (s:sphere) =
+let isec (r: ray) (s: sphere) =
   let d = sphere_intersect s r in
   if d < !closest then begin
     closest := d;
@@ -106,5 +106,4 @@ for y = 0 to h-1 do
       Printf.printf "%d " d
   done
 done
-
 
